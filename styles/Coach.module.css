@@ -1,0 +1,14 @@
+.profileCard {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.profileImage {
+    object-fit: "contain";
+    border: 2px springgreen solid;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 76% 24% 63% 37% / 35% 20% 80% 65%;
+}
