@@ -1,6 +1,5 @@
 .main {
     min-height: 100vh;
-    /* padding: 4rem 0; */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -19,24 +18,16 @@
     text-align: center;
 }
 
-/* ------------------------------------- 
-General
----------------------------------------- */
-.section {
-    min-height: 50vh;
-    width: 100%;
-}
 /* -------------------------------------
-Header Section
+Header
 --------------------------------------- */
-
 .header {
     width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--color-background-grey);
+    background-color: var(--color-white-whip);
 }
 
 .nav {
@@ -48,6 +39,18 @@ Header Section
     gap: 20px;
     align-items: flex-end;
     justify-content: space-evenly;
+}
+
+/* ------------------------------------- 
+General Section
+---------------------------------------- */
+.section {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* -------------------------------------
@@ -66,8 +69,7 @@ Welcome Section
 Coaches Section
 --------------------------------------- */
 .coachesSection {
-    /* background-color: #2e016d; */
-    background: linear-gradient(var(--color-action), var(--color-action-dark));
+    background: linear-gradient(var(--color-white-whip), var(--color-red-dark));
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -75,16 +77,18 @@ Coaches Section
 }
 
 .coachesProfile {
+    width: 80%;
     display: flex;
     flex-direction: row;
     gap: 30px;
+    justify-content: center;
 }
 
 /* -------------------------------------
 Material Section
 --------------------------------------- */
 .materialSection {
-    background-color: yellowgreen;
+    background-color: var(--color-red-dark);
 }
 .grid {
     display: flex;
@@ -109,8 +113,8 @@ Material Section
 .card:hover,
 .card:focus,
 .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: var(--color-gold);
+    border-color: var(--color-gold);
 }
 
 .card h2 {
@@ -129,7 +133,7 @@ Material Section
  --------------------------------------- */
 
 .partnerSection {
-    background-color: var(--color-pink);
+    background-color: var(--color-green);
 }
 
 /* -------------------------------------

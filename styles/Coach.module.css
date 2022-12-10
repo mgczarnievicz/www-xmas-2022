@@ -6,7 +6,7 @@
 
 .profileImage {
     object-fit: "contain";
-    border: 2px springgreen solid;
+    border: 2px var(--color-gold) solid;
     width: 250px;
     height: 250px;
     object-fit: cover;

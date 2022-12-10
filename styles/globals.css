@@ -1,13 +1,13 @@
 :root {
-    --color-black: #000000;
-    --color-black-faded: rgba(0, 0, 0, 0.7);
-    --color-white: #ffffff;
-    --color-primary-light: #3f0097;
-    --color-primary-dark: #2e016d;
-    --color-pink: #ffadb9;
-    --color-action: #7fd9e2;
-    --color-action-dark: #38ccda;
-    --color-background-grey: #efeaf2;
+    --color-red-dark: #960000;
+    --color-red: #b41d01;
+    --color-yellow: #ffcb17;
+    --color-gold: #fcb600;
+
+    --color-green-dark: #002e00;
+    --color-green: #2e4529;
+    --color-white-whip: #fceed3;
+    --color-red-apple: #ae0001;
 }
 
 html,

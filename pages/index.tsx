@@ -110,7 +110,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section
-                    id="partner-section"
+                    id="partners-section"
                     className={`${styles.section} ${styles.partnerSection}`}
                 >
                     <h1 className={styles.title}>Our Partners</h1>
