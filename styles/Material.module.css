@@ -1,0 +1,24 @@
+.materialSection {
+    width: 100%;
+    min-height: 90vh;
+    background-color: var(--color-green);
+    /* background: linear-gradient(var(--color-white-whip), var(--color-green)); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.subjectContainer {
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    .materialSection {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+}

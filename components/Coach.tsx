@@ -4,8 +4,6 @@ import { CoachProfile } from "../types/coach";
 import styles from "../styles/Coach.module.css";
 
 export default function Coach(props: CoachProfile) {
-    console.log("Props in Coach: ", props);
-
     return (
         <div className={styles.profileCard}>
             <Image

@@ -18,29 +18,6 @@
     text-align: center;
 }
 
-/* -------------------------------------
-Header
---------------------------------------- */
-.header {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--color-white-whip);
-}
-
-.nav {
-    padding: 10px;
-    font-size: 20px;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-
 /* ------------------------------------- 
 General Section
 ---------------------------------------- */
@@ -85,9 +62,9 @@ Coaches Section
 }
 
 /* -------------------------------------
-Material Section
+Links Section
 --------------------------------------- */
-.materialSection {
+.linksSection {
     background-color: var(--color-red-dark);
 }
 .grid {
@@ -134,26 +111,6 @@ Material Section
 
 .partnerSection {
     background-color: var(--color-green);
-}
-
-/* -------------------------------------
- Footer
- --------------------------------------- */
-
-.footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
 }
 
 @media (max-width: 600px) {

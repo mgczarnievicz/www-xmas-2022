@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 import Coach from "../components/Coach";
 import { CoachProfile } from "../types/coach";
@@ -34,19 +34,38 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <header className={styles.header}>
+                {/* className={styles.header} */}
+                <header className="header">
                     <Logo />
-                    <nav className={styles.nav}>
-                        <Link href={"#welcome-section"} scroll={false}>
+                    {/* className={styles.nav} */}
+                    <nav className="nav">
+                        {/* className={styles.navOption} */}
+                        <Link
+                            href={"#welcome-section"}
+                            scroll={false}
+                            className="navOption"
+                        >
                             Welcome
                         </Link>
-                        <Link href={"#coaches-section"} scroll={false}>
+                        <Link
+                            href={"#coaches-section"}
+                            scroll={false}
+                            className="navOption"
+                        >
                             Coaches
                         </Link>
-                        <Link href={"#material-section"} scroll={false}>
+                        <Link
+                            href={"#links-section"}
+                            scroll={false}
+                            className="navOption"
+                        >
                             Material
                         </Link>
-                        <Link href={"#partners-section"} scroll={false}>
+                        <Link
+                            href={"#partners-section"}
+                            scroll={false}
+                            className="navOption"
+                        >
                             Partners
                         </Link>
                     </nav>
@@ -70,7 +89,7 @@ export default function Home() {
                     className={`${styles.section} ${styles.coachesSection}`}
                 >
                     {/* Here will be the introduction of the trainees. */}
-                    <h1>Your Xmas Coaches</h1>
+                    <h1 className={styles.title}>Your Xmas Coaches</h1>
                     <div className={styles.coachesProfile}>
                         {coachArray &&
                             coachArray.map((each: CoachProfile, key) => {
@@ -80,11 +99,11 @@ export default function Home() {
                 </section>
 
                 <section
-                    id="material-section"
-                    className={`${styles.section} ${styles.materialSection}`}
+                    id="links-section"
+                    className={`${styles.section} ${styles.linksSection}`}
                 >
                     <div className={`${styles.grid} `}>
-                        <a href="/Material" className={styles.card}>
+                        <a href="/material" className={styles.card}>
                             <h2>Material &rarr;</h2>
                             <p>Find the material form the event here.</p>
                         </a>
@@ -99,11 +118,11 @@ export default function Home() {
                                 own Card!
                             </p>
                         </a>
-                        <a href="/Material" className={styles.card}>
+                        <a href="/material" className={styles.card}>
                             <h2>Xmas Card Board &rarr;</h2>
                             <p>Upload your card and see all the other cards</p>
                         </a>
-                        <a href="/Material" className={styles.card}>
+                        <a href="/material" className={styles.card}>
                             <h2>More &rarr;</h2>
                             <p>Upload your card and see all the other cards</p>
                         </a>
@@ -123,24 +142,6 @@ export default function Home() {
                     /> */}
                 </section>
             </main>
-
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Powered by{" "}
-                    <span className={styles.logo}>
-                        <Image
-                            src="/vercel.svg"
-                            alt="Vercel Logo"
-                            width={72}
-                            height={16}
-                        />
-                    </span>
-                </a>
-            </footer>
         </>
     );
 }

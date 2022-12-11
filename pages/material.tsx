@@ -1,27 +1,53 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { MaterialProps } from "../types/material";
+import styles from "../styles/Material.module.css";
+import SubjectCard from "../components/SubjectCard";
+import Logo from "../components/Logo";
+import Link from "next/link";
 
-export default function material() {
-    return <div>material</div>;
+export default function material(props: MaterialProps) {
+    console.log(props);
+
+    return (
+        <main>
+            <header className="header">
+                <Logo />
+                <nav className="nav">
+                    <Link href="/" scroll={false} className="navOption">
+                        Home
+                    </Link>
+                </nav>
+            </header>
+            <section className={styles.materialSection}>
+                <div className={styles.subjectContainer}>
+                    {props.subjects.map((subject, index) => {
+                        return <SubjectCard {...subject} key={index} />;
+                    })}
+                </div>
+            </section>
+        </main>
+    );
 }
 
 export async function getStaticProps() {
     // Get files from the material dir
     const files = fs.readdirSync(path.join("material"));
-    console.log(files);
 
-    const posts = files.map((filename) => {
+    const subjects = files.map((filename) => {
         // Create slug
         const slug = filename.replace(".md", "");
-        
-        //Get front matter
-        const markdownWithMeta = fs.readFileSync(path.join("material",filename), "utf-8")
 
-        return { slug };
+        //Get front matter
+        const markdownWithMeta = fs.readFileSync(
+            path.join("material", filename),
+            "utf-8"
+        );
+
+        const { data: frontMatter } = matter(markdownWithMeta);
+        return { slug, frontMatter };
     });
 
-    console.log("Posts: ", posts);
-
-    return { props: { posts } };
+    return { props: { subjects } };
 }
