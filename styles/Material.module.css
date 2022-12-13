@@ -16,9 +16,11 @@
     margin-top: 30px;
 }
 
-@media (max-width: 500px) {
-    .materialSection {
-        width: 95%;
+@media (max-width: 800px) {
+    .subjectContainer {
+        width: 360px;
         grid-template-columns: 1fr;
+        margin-left: 20%;
+        margin-bottom: 10%;
     }
 }

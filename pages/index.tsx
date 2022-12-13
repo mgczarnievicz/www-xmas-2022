@@ -89,7 +89,7 @@ export default function Home() {
                     className={`${styles.section} ${styles.coachesSection}`}
                 >
                     {/* Here will be the introduction of the trainees. */}
-                    <h1 className={styles.title}>Your Xmas Coaches</h1>
+                    <h1 className={styles.titleSection}>Your Xmas Coaches</h1>
                     <div className={styles.coachesProfile}>
                         {coachArray &&
                             coachArray.map((each: CoachProfile, key) => {
@@ -102,14 +102,17 @@ export default function Home() {
                     id="links-section"
                     className={`${styles.section} ${styles.linksSection}`}
                 >
+                    <h1 className={styles.titleSection}>Material</h1>
+
                     <div className={`${styles.grid} `}>
-                        <a href="/material" className={styles.card}>
+                        <Link href="/material" className={styles.card}>
                             <h2>Material &rarr;</h2>
                             <p>Find the material form the event here.</p>
-                        </a>
+                        </Link>
 
-                        <a
+                        <Link
                             href="https://nextjs.org/learn"
+                            target="_blank"
                             className={styles.card}
                         >
                             <h2>Xmas Card &rarr;</h2>
@@ -117,15 +120,24 @@ export default function Home() {
                                 Here you will find the initial code to do your
                                 own Card!
                             </p>
-                        </a>
-                        <a href="/material" className={styles.card}>
+                        </Link>
+                        <Link
+                            href="https://xmas-coding-2022.vercel.app "
+                            target="_blank"
+                            className={styles.card}
+                        >
                             <h2>Xmas Card Board &rarr;</h2>
                             <p>Upload your card and see all the other cards</p>
-                        </a>
-                        <a href="/material" className={styles.card}>
-                            <h2>More &rarr;</h2>
-                            <p>Upload your card and see all the other cards</p>
-                        </a>
+                        </Link>
+
+                        <Link
+                            href="https://www.spiced-academy.com/en"
+                            target="_blank"
+                            className={styles.card}
+                        >
+                            <h2>SPICED Academy &rarr;</h2>
+                            <p>Take a look in our web side and our programs</p>
+                        </Link>
                     </div>
                 </section>
                 <section

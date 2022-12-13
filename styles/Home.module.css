@@ -22,12 +22,20 @@
 General Section
 ---------------------------------------- */
 .section {
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 100px;
+}
+
+.titleSection {
+    /* margin-top: 50px; */
+    text-align: left;
+    font-size: 2rem;
+    width: 60%;
 }
 
 /* -------------------------------------
@@ -46,7 +54,11 @@ Welcome Section
 Coaches Section
 --------------------------------------- */
 .coachesSection {
-    background: linear-gradient(var(--color-white-whip), var(--color-red-dark));
+    background: linear-gradient(
+        var(--color-white-whip),
+        30%,
+        var(--color-red-dark)
+    );
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -59,13 +71,15 @@ Coaches Section
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 /* -------------------------------------
 Links Section
 --------------------------------------- */
 .linksSection {
-    background-color: var(--color-red-dark);
+    /* background-color: var(--color-red-dark); */
+    background: linear-gradient(var(--color-red-dark), 60%, var(--color-green));
 }
 .grid {
     display: flex;
@@ -87,9 +101,9 @@ Links Section
     max-width: 300px;
 }
 
+/* .card:active */
 .card:hover,
-.card:focus,
-.card:active {
+.card:focus {
     color: var(--color-gold);
     border-color: var(--color-gold);
 }
@@ -111,6 +125,12 @@ Links Section
 
 .partnerSection {
     background-color: var(--color-green);
+}
+
+@media (max-width: 1000px) {
+    .coachesProfile {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {

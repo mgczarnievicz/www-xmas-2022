@@ -2,7 +2,7 @@
 title: "CSS"
 date: "December 2022"
 excerpt: "What is CSS, and his syntax"
-cover_images: "/img/material/css.webp"
+cover_images: "/img/material/css.png"
 ---
 
 # What is CSS?
@@ -14,5 +14,34 @@ CSS means Cascading Stylesheets. While HTML defines the structure and semantics 
 -   Value: The value we assign to a property.
 -   Declaration: Each pair of property and value is a declaration.
 
-we only show `.class` selectors to keep specificity simple at `(0,1,0)`.
-if the participants want to overwrite styles, they should either edit the class or write add a new one, but keep them in order of how they want the styles to be applied.
+### Add Image
+
+Our selector can be:
+
+-   tag: `tagName`
+-   class: `.className`
+-   id: `#idName`
+
+## Example:
+
+```css
+h1 {
+    font-size: 30px;
+}
+
+.section-name {
+    background-color: green;
+}
+
+#id-name {
+    border: 2px solid blue;
+}
+```
+
+Because the combination is endless, for today we are only going to use class selectors.
+
+# More information:
+
+[CSS Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
+
+[Color Code](https://htmlcolorcodes.com/color-names/)

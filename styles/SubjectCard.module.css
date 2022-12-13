@@ -37,9 +37,52 @@
 
 .cardBody {
     font-size: 110%;
-    line-height: 2.3;
-    font-weight: bold;
+    line-height: 1.8;
     margin: 10px 0;
+}
+
+.cardBody pre {
+    padding: 20px;
+    margin: 20px 0;
+    /* line-height: 1.8; */
+}
+.cardBody ul,
+.cardBody ol {
+    font-size: 110%;
+    /* line-height: 1.8; */
+    margin: 5px;
+    padding-left: 40px;
+}
+
+.cardBody p {
+    line-height: 1.8;
+}
+.cardBody h1,
+.cardBody h2 {
+    margin: 15px 0 0 0;
+    /* line-height: 1.8; */
+}
+
+.cardBody table,
+.cardBody th,
+.cardBody td {
+    border: 1px solid;
+}
+
+.cardBody td {
+    padding: 10px;
+}
+
+.cardBody table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.cardImg {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 20%;
 }
 
 .btn:focus {
@@ -48,9 +91,4 @@
 
 .btn:hover {
     transform: scale(0.98);
-}
-
-.cardImg {
-    width: 100%;
-    border-radius: 10px;
 }
