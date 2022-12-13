@@ -122,6 +122,14 @@ Links Section
 /* -------------------------------------
  Partner Section
  --------------------------------------- */
+.partnersContainer {
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 50px;
+}
 
 .partnerSection {
     background-color: var(--color-green);

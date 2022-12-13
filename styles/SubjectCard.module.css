@@ -5,19 +5,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn {
-    display: inline-block;
-    background: steelblue;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: inherit;
-}
-
 .cardSection {
     background-color: var(--color-green);
     min-height: 90vh;
@@ -44,12 +31,12 @@
 .cardBody pre {
     padding: 20px;
     margin: 20px 0;
+    background-color: rgb(237, 236, 236);
     /* line-height: 1.8; */
 }
 .cardBody ul,
 .cardBody ol {
     font-size: 110%;
-    /* line-height: 1.8; */
     margin: 5px;
     padding-left: 40px;
 }
@@ -60,7 +47,6 @@
 .cardBody h1,
 .cardBody h2 {
     margin: 15px 0 0 0;
-    /* line-height: 1.8; */
 }
 
 .cardBody table,
@@ -85,10 +71,23 @@
     margin-left: 20%;
 }
 
+.btn {
+    display: inline-block;
+    background: var(--color-green-dark);
+    color: var(--color-white-whip);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+}
 .btn:focus {
     outline: none;
 }
 
 .btn:hover {
-    transform: scale(0.98);
+    transform: scale(1.2);
+    background: var(--color-red-dark);
 }

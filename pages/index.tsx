@@ -1,11 +1,14 @@
+import fs from "fs";
+import path from "path";
+
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 import Coach from "../components/Coach";
 import { CoachProfile } from "../types/coach";
 import Logo from "../components/Logo";
+import Partners from "../components/Partners";
 
 // REVIEW IMPORT FORM JSON COACH
 const coachArray = [
@@ -21,7 +24,13 @@ const coachArray = [
     },
 ];
 
-export default function Home() {
+interface HomeProps {
+    files: string[];
+}
+
+export default function Home(props: HomeProps) {
+    console.log("Props: ", props);
+
     return (
         <>
             <Head>
@@ -145,6 +154,12 @@ export default function Home() {
                     className={`${styles.section} ${styles.partnerSection}`}
                 >
                     <h1 className={styles.title}>Our Partners</h1>
+                    <div className={styles.partnersContainer}>
+                        {props.files &&
+                            props.files.map((file: string, key) => {
+                                return <Partners file={file} key={key} />;
+                            })}
+                    </div>
                     {/* <Image
                         src="/img/home/xmas-coding.png"
                         alt="Vercel Logo"
@@ -156,4 +171,19 @@ export default function Home() {
             </main>
         </>
     );
+}
+
+export async function getStaticProps() {
+    // Get files from the material dir
+    let files = fs.readdirSync(path.join("public", "img", "home", "partners"));
+
+    console.log("fils: ", files);
+
+    files = files.filter((file) => {
+        return file.toLocaleLowerCase().includes("logo");
+    });
+
+    console.log("fils after: ", files);
+
+    return { props: { files } };
 }

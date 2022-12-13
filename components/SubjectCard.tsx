@@ -12,10 +12,10 @@ export default function SubjectCard(props: SubjectInfo) {
                 src={props.frontMatter.cover_images}
                 alt={props.slug}
                 width={250}
-                height={250}
+                height={200}
                 className={styles.cardImg}
             ></Image>
-            <h3>{props.frontMatter.title}</h3>
+            <h2>{props.frontMatter.title}</h2>
             <p>{props.frontMatter.excerpt}</p>
             <Link href={`/subject/${props.slug}`}>
                 <button className={styles.btn}>Read More</button>

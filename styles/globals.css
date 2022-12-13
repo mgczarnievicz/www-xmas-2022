@@ -24,8 +24,9 @@ a {
     text-decoration: none;
 }
 
-
-
+p {
+    line-height: 1.8;
+}
 
 main {
     /* min-height: 100vh; */
