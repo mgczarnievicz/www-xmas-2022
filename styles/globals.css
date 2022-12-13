@@ -52,10 +52,13 @@ Header
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--color-white-whip);
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .nav {
-    padding: 10px;
+    padding: 13px;
     font-size: 20px;
     width: 50%;
     display: flex;
@@ -63,11 +66,19 @@ Header
     gap: 20px;
     align-items: flex-end;
     justify-content: space-evenly;
+    color: var(--color-red-apple);
 }
 
 .navOption:hover {
     /* color: var(--color-gold); */
     color: var(--color-red-apple);
+}
+
+img.sticky_image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
 }
 
 /* -------------------------------------

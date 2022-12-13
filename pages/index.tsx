@@ -80,18 +80,18 @@ export default function Home(props: HomeProps) {
                         </Link>
                     </nav>
                 </header>
+                <Image
+                    src="/img/home/wxmasc_onwhite-logo.svg"
+                    className="sticky_image"
+                    alt="Vercel Logo"
+                    width={500}
+                    height={500}
+                    objectFit="cover"
+                />
                 <section
                     id="welcome-section"
                     className={`${styles.section} ${styles.welcomeSection}`}
-                >
-                    <Image
-                        src="/img/home/wxmasc_onwhite-logo.svg"
-                        alt="Vercel Logo"
-                        width={500}
-                        height={500}
-                        objectFit="cover"
-                    />
-                </section>
+                ></section>
 
                 <section
                     id="coaches-section"
