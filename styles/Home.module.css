@@ -23,7 +23,7 @@
 General Section
 ---------------------------------------- */
 .section {
-    min-height: 60vh;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -83,18 +83,23 @@ Coaches Section
 Links Section
 --------------------------------------- */
 .linksSection {
-    /* background: linear-gradient(var(--color-red), 60%, var(--color-white-whip)); */
+    background: linear-gradient(var(--color-red), 50%, var(--color-white-whip));
+    box-shadow: 0px 0px 80px 100px var(--color-red);
+
+    background-image: url("/img/home/links.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.linksSection .titleSection {
+    color: var(--color-red);
 }
 .grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
-    color: var(--color-white-whip);
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
@@ -103,14 +108,16 @@ Links Section
     border: 1px solid black;
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: 300px;
+    max-width: 400px;
+    /* background-color: var(--color-white-whip); */
 }
 
 /* .card:active */
 .card:hover,
 .card:focus {
-    color: var(--color-green);
-    border-color: var(--color-green);
+    background-color: var(--color-red-dark);
+    color: var(--color-white-whip);
+    /* border-color: var(--color-green); */
 }
 
 .card h2 {
@@ -128,7 +135,6 @@ Links Section
  Partner Section
  --------------------------------------- */
 .partnersContainer {
-    /* background-color: white; */
     padding: 50px;
     margin-top: 20px;
     border-radius: 12px;
@@ -139,7 +145,6 @@ Links Section
 
 .partnerSection {
     background-color: var(--color-white-whip);
-    /* color: var(--color-white-whip); */
 }
 
 @media (max-width: 1000px) {
@@ -148,10 +153,10 @@ Links Section
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .grid {
         width: 100%;
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

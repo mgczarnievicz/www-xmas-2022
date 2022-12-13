@@ -84,21 +84,6 @@ export default function Home(props: HomeProps) {
                     id="welcome-section"
                     className={`${styles.section} ${styles.welcomeSection}`}
                 >
-                    {/* <Image
-                        src="/img/home/snowflake.svg"
-                        alt="Vercel Logo"
-                        width={500}
-                        height={500}
-                        objectFit="cover"
-                    /> */}
-
-                    {/* <Image
-                        src="/img/home/wxmasc_white_logo.svg"
-                        alt="Vercel Logo"
-                        width={500}
-                        height={500}
-                        objectFit="cover"
-                    /> */}
                     <Image
                         src="/img/home/wxmasc_onwhite-logo.svg"
                         alt="Vercel Logo"
@@ -126,7 +111,7 @@ export default function Home(props: HomeProps) {
                     id="links-section"
                     className={`${styles.section} ${styles.linksSection}`}
                 >
-                    <h1 className={styles.titleSection}>Material</h1>
+                    <h1 className={styles.titleSection}>Useful Links</h1>
 
                     <div className={`${styles.grid} `}>
                         <Link href="/material" className={styles.card}>
