@@ -15,7 +15,7 @@ export default function Coach(props: CoachProfile) {
                 className={styles.profileImage}
             />
 
-            <div className="coachDescription">
+            <div className={styles.coachDescription}>
                 <h1>{props.name}</h1>
                 <p>{props.description}</p>
             </div>

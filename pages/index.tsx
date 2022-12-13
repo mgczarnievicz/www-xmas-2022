@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 
+import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
@@ -83,14 +84,28 @@ export default function Home(props: HomeProps) {
                     id="welcome-section"
                     className={`${styles.section} ${styles.welcomeSection}`}
                 >
-                    <h1 className={styles.title}>Women&apos;s Xmas Coding</h1>
                     {/* <Image
-                        src="/img/home/xmas-coding.png"
+                        src="/img/home/snowflake.svg"
                         alt="Vercel Logo"
                         width={500}
                         height={500}
                         objectFit="cover"
                     /> */}
+
+                    {/* <Image
+                        src="/img/home/wxmasc_white_logo.svg"
+                        alt="Vercel Logo"
+                        width={500}
+                        height={500}
+                        objectFit="cover"
+                    /> */}
+                    <Image
+                        src="/img/home/wxmasc_onwhite-logo.svg"
+                        alt="Vercel Logo"
+                        width={500}
+                        height={500}
+                        objectFit="cover"
+                    />
                 </section>
 
                 <section
@@ -160,13 +175,6 @@ export default function Home(props: HomeProps) {
                                 return <Partners file={file} key={key} />;
                             })}
                     </div>
-                    {/* <Image
-                        src="/img/home/xmas-coding.png"
-                        alt="Vercel Logo"
-                        width={500}
-                        height={500}
-                        objectFit="cover"
-                    /> */}
                 </section>
             </main>
         </>

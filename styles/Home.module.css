@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background: linear-gradient(var(--color-white-whip), 30%, var(--color-red)); */
 }
 
 .title {
@@ -32,18 +33,22 @@ General Section
 }
 
 .titleSection {
-    /* margin-top: 50px; */
-    text-align: left;
-    font-size: 2rem;
-    width: 60%;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    padding-bottom: 60px;
+    color: var(--color-white-whip);
 }
 
 /* -------------------------------------
 Welcome Section
 --------------------------------------- */
 .welcomeSection {
-    /* background-color: rebeccapurple; */
-    background-image: url("/img/home/snowfall.jpeg");
+    background-image: url("/img/home/home.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 94vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,11 +59,11 @@ Welcome Section
 Coaches Section
 --------------------------------------- */
 .coachesSection {
-    background: linear-gradient(
-        var(--color-white-whip),
-        30%,
-        var(--color-red-dark)
-    );
+    background-image: url("/img/home/pattern.svg");
+    background-repeat: repeat;
+    background-size: 200px;
+    background-position: center;
+
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -78,8 +83,7 @@ Coaches Section
 Links Section
 --------------------------------------- */
 .linksSection {
-    /* background-color: var(--color-red-dark); */
-    background: linear-gradient(var(--color-red-dark), 60%, var(--color-green));
+    /* background: linear-gradient(var(--color-red), 60%, var(--color-white-whip)); */
 }
 .grid {
     display: flex;
@@ -90,12 +94,13 @@ Links Section
 }
 
 .card {
+    color: var(--color-white-whip);
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
     color: inherit;
     text-decoration: none;
-    border: 1px solid #eaeaea;
+    border: 1px solid black;
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
     max-width: 300px;
@@ -104,8 +109,8 @@ Links Section
 /* .card:active */
 .card:hover,
 .card:focus {
-    color: var(--color-gold);
-    border-color: var(--color-gold);
+    color: var(--color-green);
+    border-color: var(--color-green);
 }
 
 .card h2 {
@@ -123,8 +128,9 @@ Links Section
  Partner Section
  --------------------------------------- */
 .partnersContainer {
-    background-color: white;
+    /* background-color: white; */
     padding: 50px;
+    margin-top: 20px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -132,7 +138,8 @@ Links Section
 }
 
 .partnerSection {
-    background-color: var(--color-green);
+    background-color: var(--color-white-whip);
+    /* color: var(--color-white-whip); */
 }
 
 @media (max-width: 1000px) {
