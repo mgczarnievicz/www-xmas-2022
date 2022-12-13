@@ -12,11 +12,13 @@ import Logo from "../components/Logo";
 import Partners from "../components/Partners";
 
 // REVIEW IMPORT FORM JSON COACH
+//The welcome link doesnt work
 const coachArray = [
     {
         name: "Gimena",
         img: "/img/coaches/gimena.jpg",
-        description: "FS Coach from Spiced Berlin",
+        description:
+            "Is a FS Coach from Spiced Berlin.  Originally for Uruguay and been here in Berlin for 1.5 year. Not only has she done here the web developer bootcamp but also study electronic engineer in her country. ",
     },
     {
         name: "Jan",
@@ -30,7 +32,7 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-    console.log("Props: ", props);
+    // console.log("Props: ", props);
 
     return (
         <>
@@ -52,7 +54,7 @@ export default function Home(props: HomeProps) {
                         {/* className={styles.navOption} */}
                         <Link
                             href={"#welcome-section"}
-                            scroll={false}
+                            scroll={true}
                             className="navOption"
                         >
                             Welcome
@@ -170,13 +172,13 @@ export async function getStaticProps() {
     // Get files from the material dir
     let files = fs.readdirSync(path.join("public", "img", "home", "partners"));
 
-    console.log("fils: ", files);
+    // console.log("fils: ", files);
 
     files = files.filter((file) => {
         return file.toLocaleLowerCase().includes("logo");
     });
 
-    console.log("fils after: ", files);
+    // console.log("fils after: ", files);
 
     return { props: { files } };
 }

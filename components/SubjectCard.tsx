@@ -11,8 +11,8 @@ export default function SubjectCard(props: SubjectInfo) {
             <Image
                 src={props.frontMatter.cover_images}
                 alt={props.slug}
-                width={250}
-                height={200}
+                width={100}
+                height={150}
                 className={styles.cardImg}
             ></Image>
             <h2>{props.frontMatter.title}</h2>

@@ -1,13 +1,23 @@
 .card {
     padding: 15px;
     border-radius: 10px;
+    border: 2px solid var(--color-green);
+
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cardSection {
-    background-color: var(--color-green);
-    min-height: 90vh;
+    width: 100%;
+    min-height: 96vh;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    background-image: url("/img/material/pattern_papanoel.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     display: flex;
     justify-content: center;
 }

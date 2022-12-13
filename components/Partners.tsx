@@ -7,7 +7,7 @@ interface PartnersProps {
 }
 
 export default function Partners(props: PartnersProps) {
-    console.log("Props in Partners: ", props);
+    // console.log("Props in Partners: ", props);
 
     return (
         <Image
