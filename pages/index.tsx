@@ -163,7 +163,7 @@ export default function Home(props: HomeProps) {
                     id="partners-section"
                     className={`${styles.section} ${styles.partnerSection}`}
                 >
-                    <h1 className={styles.title}>Our Partners</h1>
+                    <h1 className={styles.titleSection}>Our Partners</h1>
                     <div className={styles.partnersContainer}>
                         {props.files &&
                             props.files.map((file: string, key) => {

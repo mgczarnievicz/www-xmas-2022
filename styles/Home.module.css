@@ -8,18 +8,6 @@
     /* background: linear-gradient(var(--color-white-whip), 30%, var(--color-red)); */
 }
 
-.title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
-}
-
-.title,
-.description {
-    text-align: center;
-    color: var(--color-red);
-}
-
 /* ------------------------------------- 
 General Section
 ---------------------------------------- */
@@ -39,6 +27,7 @@ General Section
     width: 100%;
     padding-bottom: 60px;
     color: var(--color-white-whip);
+    font-variant: all-small-caps;
 }
 
 .animation {
@@ -168,6 +157,9 @@ Links Section
 
 .partnerSection {
     background-color: var(--color-white);
+}
+.partnerSection .titleSection {
+    color: var(--color-red);
 }
 
 @media (max-width: 1000px) {
