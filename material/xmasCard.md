@@ -8,7 +8,7 @@ cover_images: "/img/material/js.png"
 # Steps to create you own X-mas Card
 
 To build your own card, we are going to start with the template code. To access it, go to home -> Material -> Xmas Card.
-This will open a new windows/ tab.
+This will open a new window / tab.
 
 # Code Structure.
 
@@ -46,8 +46,8 @@ This will open a new windows/ tab.
 
 We want our card to have:
 
-1. Front: Where we are going to put a photo
-2. Back: where we will write our whishes.
+1. Front: This is where we are going to put a photo
+2. Back: This is where we will write our whishes
 
 ![Semantics](../img/material/cardExample.png)
 
@@ -61,9 +61,9 @@ So we will want our main tag, to have the class `.card`. Then inside of it, we w
 
 The section with the class `.front` is going to be our front, so inside this section we should add what we want to be in the front of our card. Some title, an image.
 
-The section with the class `.back` is going to be the back of our card. Here we want to put some nice text for our beloveds.
+The section with the class `.back` is going to be the back of our card. Here we want to put some nice text for our loved ones.
 
-Up until know, your code should look like:
+Up until now, your code should look like:
 
 ```html
 <main class="card">
@@ -98,7 +98,7 @@ In here we want to write a message. This one we can, for example divide in three
 2. The content
 3. The closing remarks and signature.
 
-The greeting, we want it to have more importance than the context, so for this we can use an h2 tag meanwhile for the content and closing we can use different p tag.
+We want the greeting to have more importance than the context, so for this we can use an h2 tag whereas for the content and closing we can use a p tag.
 
 Example:
 
@@ -112,13 +112,13 @@ Example:
 
 ## Styling our front and back elements.
 
-The simplest way to style is adding a class to each element or styling by section.
+The simplest way to style different parts of the page is adding a class to each element or styling by section.
 
 Example:
 
 ### By section/ block.
 
--   We are not adding any more classes to the elements, we are going to add a property to the element tha contains what we want to style. Be awear that ALL elements in this block will change.
+-   We are not adding any more classes to the elements, we are going to add a property to the element that contains what we want to style. Be aware that ALL elements in this block will change.
 
 ```css
 .card {
@@ -152,16 +152,15 @@ Example:
 }
 ```
 
-## Adding funtionality.
+## Adding funtionality
 
-Now we see the front of our card, but when we clicked nothing happens.
-The functionality of the clicked we need to add it in a JS file.
-Because, this require more noleage we pre definde/ made the function we must just import it and call it.
-
+Now we see the front of our card, but when we click nothing happens.
+The functionality of the `click` we need to add it in a JS file.
+Because this requires more knowledge we predefinded that function.  All we need to do is to import it and execute it.
 ### Steps:
 
 1. We must create JS file. Let's call it `script.js`
-2. We must import the function. From where? From the file `sketch.js`
+2. We must import the function so we can use it. From where? From the file `sketch.js`
 
 ```js
 import { createCardFlip } from "/.there-be-dragons/sketch.js";
@@ -173,17 +172,17 @@ import { createCardFlip } from "/.there-be-dragons/sketch.js";
 createCardFlip();
 ```
 
-Now lets see our card, let click in it and see how this flips.
+Now lets see our card. Let's click in it and see how it flips.
 Now we are able to see the back!
 
 ## Adding a nice image.
 
-If we want to add a image in our front for example. We need to use the tag `<img>` this tag require a src, this is the name of the file and where is located.
-Another attribute that is require is the alt for accessibility!, this is the "Description" that is read when we use the read browser.
+If we want to add an image in the front we need to use the tag `<img>`. This tag requires a `src`, this is the name of the file and where it is located.
+Another attribute that is required is the `alt` for accessibility!, this is the "description" that is used for screen readers.
 
-Because we want the image the image to cover our front, we prepare one class `.postcardimage` that we should add to our image.
+Because we want the image to cover our front, we prepare one class `.postcardimage` that we should add to our image.
 
-Our code should look like:
+Our code should look like this:
 
 ```html
 <img
