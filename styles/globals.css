@@ -35,7 +35,7 @@ a {
 }
 
 p {
-    line-height: 1.8;
+    line-height: 1.4;
 }
 
 main {
@@ -51,10 +51,11 @@ Header
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--color-white-whip);
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     z-index: 2;
+    border-bottom: solid 1px black;
 }
 
 .nav {
@@ -66,19 +67,11 @@ Header
     gap: 20px;
     align-items: flex-end;
     justify-content: space-evenly;
-    color: var(--color-red-apple);
+    color: black;
 }
 
 .navOption:hover {
-    /* color: var(--color-gold); */
     color: var(--color-red-apple);
-}
-
-img.sticky_image {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 0;
 }
 
 /* -------------------------------------

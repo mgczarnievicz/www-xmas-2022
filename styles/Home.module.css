@@ -40,6 +40,16 @@ General Section
     color: var(--color-white-whip);
 }
 
+.animation {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+img.sticky_image {
+    z-index: 0;
+}
+
 /* -------------------------------------
 Welcome Section
 --------------------------------------- */
@@ -49,6 +59,7 @@ Welcome Section
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +82,7 @@ Coaches Section
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    min-height: 100vh;
 }
 
 .coachesProfile {
@@ -93,6 +105,7 @@ Links Section
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
 .linksSection .titleSection {
     color: var(--color-red);
@@ -164,6 +177,12 @@ Links Section
     .grid {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .partnersContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    img.sticky_image {
+        width: 300px;
     }
 }
 
