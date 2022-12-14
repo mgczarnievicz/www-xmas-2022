@@ -76,6 +76,8 @@ Up until now, your code should look like:
 </main>
 ```
 
+Nothing should change due to, we haven't import the pre made classes.
+
 # Adding some elements.
 
 ## Front section.
@@ -104,8 +106,11 @@ Example:
 
 ```html
 <section class="back">
-    <h2>Cheers to Mary</h2>
-    <p>Lorem Impsum</p>
+    <h2>Dear Mary</h2>
+    <p>
+        Wishing you love, light, and laughter for Christmas and the New Year
+        too!
+    </p>
     <p>Cheers, XOXO</p>
 </section>
 ```
@@ -136,8 +141,12 @@ Example:
         <h1 class="headline">Happy Holidays!</h1>
     </section>
     <section class="back">
-        <h2>Cheers to whoever</h2>
-        <p>Lorem Impsum</p>
+        <
+        <h2>Dear Mary</h2>
+        <p>
+            Wishing you love, light, and laughter for Christmas and the New Year
+            too!
+        </p>
         <p>Cheers, XOXO</p>
     </section>
 </main>
@@ -152,14 +161,26 @@ Example:
 }
 ```
 
+### Importing an css file.
+
+To add the pre defined classes, we need to import the file where they are defined.
+This should be our first line in our CSS file.
+
+```css
+@import url("/.there-be-dragons/global.css");
+```
+
+Now we don't see any more the back of our card, but that is what we want.
+
 ## Adding funtionality
 
 Now we see the front of our card, but when we click nothing happens.
 The functionality of the `click` we need to add it in a JS file.
-Because this requires more knowledge we predefinded that function.  All we need to do is to import it and execute it.
+Because this requires more knowledge we pre define that function. All we need to do is to import it and execute it.
+
 ### Steps:
 
-1. We must create JS file. Let's call it `script.js`
+1. Let's go to our `script.js` in js folder
 2. We must import the function so we can use it. From where? From the file `sketch.js`
 
 ```js
@@ -191,3 +212,60 @@ Our code should look like this:
     alt="christmas postcard image"
 />
 ```
+
+Now our front has a background Image.
+Our headline, doesn't look good, so let style some more.
+
+Let's create a new class in our CSS.
+
+```css
+.contrasted {
+    text-shadow: 5px 4px black;
+}
+```
+
+Now let's add this class to our headline too. How do we do this, in our HTML where we add headline, we add a space and add contrasted.
+
+Your code should look like:
+
+```html
+<section class="front">
+    <h1 class="headline contrasted">Happy Christmas!</h1>
+    <img
+        class="postcardimage"
+        src="/images/christmas-lights.jpg"
+        alt="christmas tree"
+    />
+</section>
+```
+
+You can also add this style to headline instead of creating a new class.
+
+## Adding snow.
+
+To add the snow falling, we need to:
+
+1. Create a new HTML element in the end of our font section. This should have the class `.snowfall`
+
+```html
+<section class="front">
+    <h1 class="headline contrasted">Happy Christmas!</h1>
+    <img
+        class="postcardimage"
+        src="/images/christmas-lights.jpg"
+        alt="christmas tree"
+    />
+    <div class="snowfall"></div>
+</section>
+```
+
+2. We need to import a new function in our JS file call `createSnowfall`
+
+```js
+import { createCardFlip, createSnowfall } from "/.there-be-dragons/sketch.js";
+
+createCardFlip();
+createSnowfall();
+```
+
+Now, our card is finish! We can improve it with some more styling.
