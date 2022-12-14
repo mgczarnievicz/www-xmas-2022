@@ -112,4 +112,83 @@ Example:
 
 ## Styling our front and back elements.
 
-The simplest way to style is adding a class
+The simplest way to style is adding a class to each element or styling by section.
+
+Example:
+
+### By section/ block.
+
+-   We are not adding any more classes to the elements, we are going to add a property to the element tha contains what we want to style. Be awear that ALL elements in this block will change.
+
+```css
+.card {
+    font-family: "Caveat";
+}
+```
+
+### Adding new classes to each element.
+
+-   In our HTML
+
+```html
+<main class="card">
+    <section class="front">
+        <h1 class="headline">Happy Holidays!</h1>
+    </section>
+    <section class="back">
+        <h2>Cheers to whoever</h2>
+        <p>Lorem Impsum</p>
+        <p>Cheers, XOXO</p>
+    </section>
+</main>
+```
+
+-   In our Css
+
+```css
+.headline {
+    font-family: "Mountains of Christmas";
+    color: maroon;
+}
+```
+
+## Adding funtionality.
+
+Now we see the front of our card, but when we clicked nothing happens.
+The functionality of the clicked we need to add it in a JS file.
+Because, this require more noleage we pre definde/ made the function we must just import it and call it.
+
+### Steps:
+
+1. We must create JS file. Let's call it `script.js`
+2. We must import the function. From where? From the file `sketch.js`
+
+```js
+import { createCardFlip } from "/.there-be-dragons/sketch.js";
+```
+
+3. We must invoque the function so this runs.
+
+```js
+createCardFlip();
+```
+
+Now lets see our card, let click in it and see how this flips.
+Now we are able to see the back!
+
+## Adding a nice image.
+
+If we want to add a image in our front for example. We need to use the tag `<img>` this tag require a src, this is the name of the file and where is located.
+Another attribute that is require is the alt for accessibility!, this is the "Description" that is read when we use the read browser.
+
+Because we want the image the image to cover our front, we prepare one class `.postcardimage` that we should add to our image.
+
+Our code should look like:
+
+```html
+<img
+    class="postcardimage"
+    src="/images/christmas-lights.jpg"
+    alt="christmas postcard image"
+/>
+```
