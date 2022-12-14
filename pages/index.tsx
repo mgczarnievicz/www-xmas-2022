@@ -158,7 +158,7 @@ export default function Home(props: HomeProps) {
                             className={styles.card}
                         >
                             <h2>SPICED Academy &rarr;</h2>
-                            <p>Take a look in our web side and our programs</p>
+                            <p>Take a look at our website and the courses that we offer</p>
                         </Link>
                     </div>
                 </section>
