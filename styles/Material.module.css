@@ -12,8 +12,8 @@
     position: sticky;
     /* z-index: -1; */
     text-align: center;
-
     top: 10px;
+    font-family: "Ovo", serif;
 }
 
 .subjectContainer {

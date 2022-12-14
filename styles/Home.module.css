@@ -21,6 +21,7 @@ General Section
     justify-content: center;
     padding: 100px;
     justify-content: flex-start;
+    font-family: "Ovo", serif;
 }
 
 .titleSection {
@@ -31,6 +32,7 @@ General Section
     color: var(--color-white-whip);
     font-variant: all-small-caps;
     margin-top: 50px;
+    font-family: "Ovo", serif;
 }
 
 .animation {
@@ -61,6 +63,7 @@ Welcome Section
     position: sticky;
     z-index: -1;
     top: 10px;
+    font-family: "Ovo", serif;
 }
 
 /* -------------------------------------
@@ -79,6 +82,7 @@ Coaches Section
     align-items: center;
     min-height: 100vh;
     justify-content: flex-start;
+    font-family: "Ovo", serif;
 }
 
 .coachesProfile {
@@ -88,6 +92,7 @@ Coaches Section
     gap: 30px;
     justify-content: center;
     margin-bottom: 20px;
+    font-family: "Ovo", serif;
 }
 
 /* -------------------------------------
@@ -103,6 +108,7 @@ Links Section
     background-position: center;
     min-height: 100vh;
     justify-content: flex-start;
+    font-family: "Ovo", serif;
 }
 .linksSection .titleSection {
     color: var(--color-red);
@@ -159,6 +165,7 @@ Links Section
     grid-template-columns: repeat(4, 2fr);
     gap: 50px;
     filter: grayscale(1);
+    font-family: "Ovo", serif;
 }
 
 .partnerSection .titleSection {
@@ -172,6 +179,7 @@ Links Section
     align-items: center;
     min-height: 100vh;
     justify-content: flex-start;
+    font-family: "Ovo", serif;
 }
 
 @media (max-width: 1000px) {
