@@ -17,6 +17,7 @@
 .title,
 .description {
     text-align: center;
+    color: var(--color-red);
 }
 
 /* ------------------------------------- 
@@ -40,15 +41,27 @@ General Section
     color: var(--color-white-whip);
 }
 
+.animation {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+img.sticky_image {
+    z-index: 0;
+}
+
 /* -------------------------------------
 Welcome Section
 --------------------------------------- */
 .welcomeSection {
     background-image: url("/img/home/img.jpg");
+    filter: grayscale(1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,11 +79,12 @@ Coaches Section
     background-repeat: repeat;
     background-size: 200px;
     background-position: center;
-
+    box-shadow: 0px 0px 80px 100px var(--color-red);
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    min-height: 100vh;
 }
 
 .coachesProfile {
@@ -87,12 +101,13 @@ Links Section
 --------------------------------------- */
 .linksSection {
     background: linear-gradient(var(--color-red), 50%, var(--color-white-whip));
-    box-shadow: 0px 0px 80px 100px var(--color-red);
+    box-shadow: 0px 0px 80px 100px var(--color-white-whip);
 
     background-image: url("/img/home/links.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
 .linksSection .titleSection {
     color: var(--color-red);
@@ -148,10 +163,11 @@ Links Section
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 50px;
+    filter: grayscale(1);
 }
 
 .partnerSection {
-    background-color: var(--color-white-whip);
+    background-color: var(--color-white);
 }
 
 @media (max-width: 1000px) {
@@ -166,7 +182,12 @@ Links Section
         grid-template-columns: repeat(1, 1fr);
     }
     .partnersContainer {
-        grid-template-columns: repeat(2, 2fr);
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+    img.sticky_image {
+        width: 300px;
+
     }
 }
 
