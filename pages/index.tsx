@@ -133,7 +133,7 @@ export default function Home(props: HomeProps) {
                         </Link>
 
                         <Link
-                            href="https://nextjs.org/learn"
+                            href="https://codesandbox.io/s/xmas-coding-2022-qtido4"
                             target="_blank"
                             className={styles.card}
                         >
@@ -158,7 +158,10 @@ export default function Home(props: HomeProps) {
                             className={styles.card}
                         >
                             <h2>SPICED Academy &rarr;</h2>
-                            <p>Take a look at our website and the courses that we offer</p>
+                            <p>
+                                Take a look at our website and the courses that
+                                we offer
+                            </p>
                         </Link>
                     </div>
                 </section>
