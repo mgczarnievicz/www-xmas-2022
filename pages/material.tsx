@@ -6,28 +6,40 @@ import styles from "../styles/Material.module.css";
 import SubjectCard from "../components/SubjectCard";
 import Logo from "../components/Logo";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function material(props: MaterialProps) {
     // console.log(props);
 
     return (
-        <main>
-            <header className="header">
-                <Logo />
-                <nav className="nav">
-                    <Link href="/" scroll={false} className="navOption">
-                        Home
-                    </Link>
-                </nav>
-            </header>
-            <section className={styles.materialSection}>
-                <div className={styles.subjectContainer}>
-                    {props.subjects.map((subject, index) => {
-                        return <SubjectCard {...subject} key={index} />;
-                    })}
-                </div>
-            </section>
-        </main>
+        <>
+            <Head>
+                <script
+                    defer
+                    src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                    crossOrigin="anonymous"
+                ></script>
+                <script defer type="text/javascript" src="/script.js"></script>
+            </Head>
+            <main>
+                <header className="header">
+                    <Logo />
+                    <nav className="nav">
+                        <Link href="/" scroll={false} className="navOption">
+                            Home
+                        </Link>
+                    </nav>
+                </header>
+                <section className={styles.materialSection}>
+                    <div className={styles.subjectContainer}>
+                        {props.subjects.map((subject, index) => {
+                            return <SubjectCard {...subject} key={index} />;
+                        })}
+                    </div>
+                </section>
+            </main>
+        </>
     );
 }
 

@@ -3,13 +3,14 @@
     flex-direction: row;
     gap: 20px;
     color: var(--color-white-whip);
+    min-width: 400px;
 }
 
 .profileImage {
     object-fit: "contain";
     /* border: 2px var(--color-white-whip) solid; */
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 76% 24% 63% 37% / 35% 20% 80% 65%;
     filter: grayscale(1);
@@ -26,5 +27,6 @@
         gap: 20px;
         color: var(--color-white-whip);
         align-items: center;
+        justify-content: center;
     }
 }

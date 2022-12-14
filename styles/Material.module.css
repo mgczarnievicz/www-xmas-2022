@@ -1,21 +1,25 @@
 .materialSection {
-    width: 100%;
-    min-height: 96vh;
 
-    background-image: url("/img/material/pattern_papanoel.svg");
+    background-image: url("/img/home/tree.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 96vh;
+    width: 100vw;
 
-    /* background-color: var(--color-green); */
-    /* background: linear-gradient(var(--color-white-whip), var(--color-green)); */
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
+    position: sticky;
+    /* z-index: -1; */
+    text-align: center;
+
+    top: 10px;
 }
 
 .subjectContainer {
-    width: 750px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -27,7 +31,6 @@
     .subjectContainer {
         width: 360px;
         grid-template-columns: 1fr;
-        margin-left: 20%;
         margin-bottom: 10%;
     }
 }

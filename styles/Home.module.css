@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     /* background: linear-gradient(var(--color-white-whip), 30%, var(--color-red)); */
 }
 
@@ -19,6 +20,7 @@ General Section
     align-items: center;
     justify-content: center;
     padding: 100px;
+    justify-content: flex-start;
 }
 
 .titleSection {
@@ -28,6 +30,7 @@ General Section
     padding-bottom: 60px;
     color: var(--color-white-whip);
     font-variant: all-small-caps;
+    margin-top: 50px;
 }
 
 .animation {
@@ -68,12 +71,14 @@ Coaches Section
     background-repeat: repeat;
     background-size: 200px;
     background-position: center;
-    box-shadow: 0px 0px 80px 100px var(--color-red);
+    box-shadow: 0px 0px 80px 100px var(--color-red),
+        inset 0px 50px 30px -20px var(--color-red);
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
     min-height: 100vh;
+    justify-content: flex-start;
 }
 
 .coachesProfile {
@@ -90,12 +95,14 @@ Links Section
 --------------------------------------- */
 .linksSection {
     background: linear-gradient(var(--color-red), 50%, var(--color-white-whip));
-    box-shadow: 0px 0px 80px 100px #f7eee3;
+
+    box-shadow: 0px 0px 80px 100px #f7eee3, inset 0px 50px 30px -20px #f7eee3;
     background-image: url("/img/home/links.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    justify-content: flex-start;
 }
 .linksSection .titleSection {
     color: var(--color-red);
@@ -103,21 +110,22 @@ Links Section
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 
 .card {
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
-
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid var(--color-red) !important;
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: 400px;
+    width: 300px;
     /* background-color: var(--color-white-whip); */
     transition: all 0.2s ease-in-out;
     color: var(--color-red);
+    z-index: 1;
 }
 
 /* .card:active */
@@ -146,7 +154,6 @@ Links Section
  --------------------------------------- */
 .partnersContainer {
     padding: 50px;
-    margin-top: 20px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -154,12 +161,17 @@ Links Section
     filter: grayscale(1);
 }
 
-.partnerSection {
-    background-color: var(--color-white);
-    box-shadow: 0px 0px 80px 100px white;
-}
 .partnerSection .titleSection {
     color: var(--color-red);
+}
+.partnerSection {
+    box-shadow: 0px 0px 80px 100px white;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: flex-start;
 }
 
 @media (max-width: 1000px) {
@@ -170,16 +182,44 @@ Links Section
 
 @media (max-width: 800px) {
     .grid {
-        width: 100%;
         grid-template-columns: repeat(1, 1fr);
+        width: 80%;
     }
     .partnersContainer {
 
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
     }
+
+    .partnersContainer img {
+        width: 100px;
+
+    }
+
     img.sticky_image {
         width: 300px;
 
+    }
+    .coachesProfile {
+        align-items: center;
+    }
+    .coachesSection {
+        padding: 0px;
+    }
+    .linksSection {
+        padding: 0px;
+    }
+    .coachesSection {
+        padding: 0px;
+    }
+    .partnerSection {
+        padding: 0;
+    }
+    .coachesProfile {
+        padding-bottom: 50%;
+    }
+    .card {
+        width: 80%;
     }
 }
 

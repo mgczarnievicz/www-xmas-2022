@@ -1,30 +1,32 @@
-.card {
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid var(--color-green);
-
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
 
 .cardSection {
-    width: 100%;
-    min-height: 96vh;
-    padding-bottom: 60px;
-    padding-top: 60px;
-
-    background-image: url("/img/material/pattern_papanoel.svg");
+    /* background-image: url("/img/home/xmas.jpeg") no-repeat 1 100%; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 96vh;
+    width: 100vw;
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    position: sticky;
+    /* z-index: -1; */
+    text-align: center;
+    top: 10px;
+    color: black;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        url("/img/home/xmas.jpeg");
+    background-attachment: fixed;
 }
 
 .cardPage {
     width: 80%;
-    padding: 15px 30px;
+    padding: 50px 30px;
     margin: 20px 0;
 }
 
@@ -76,22 +78,22 @@
 }
 
 .cardImg {
-    width: 200px;
+    width: 100px;
+    height: auto;
     border-radius: 10px;
-    margin-left: 20%;
 }
 
 .btn {
     display: inline-block;
-    background: var(--color-green-dark);
     color: var(--color-white-whip);
     border: none;
-    padding: 10px 16px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     font-size: 15px;
     font-family: inherit;
+    margin-top: 10px;
 }
 .btn:focus {
     outline: none;
