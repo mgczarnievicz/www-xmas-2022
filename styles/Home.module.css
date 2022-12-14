@@ -17,6 +17,7 @@
 .title,
 .description {
     text-align: center;
+    color: var(--color-red);
 }
 
 /* ------------------------------------- 
@@ -55,6 +56,7 @@ Welcome Section
 --------------------------------------- */
 .welcomeSection {
     background-image: url("/img/home/img.jpg");
+    filter: grayscale(1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -77,7 +79,7 @@ Coaches Section
     background-repeat: repeat;
     background-size: 200px;
     background-position: center;
-
+    box-shadow: 0px 0px 80px 100px var(--color-red);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -99,7 +101,7 @@ Links Section
 --------------------------------------- */
 .linksSection {
     background: linear-gradient(var(--color-red), 50%, var(--color-white-whip));
-    box-shadow: 0px 0px 80px 100px var(--color-red);
+    box-shadow: 0px 0px 80px 100px var(--color-white-whip);
 
     background-image: url("/img/home/links.jpeg");
     background-repeat: no-repeat;
@@ -161,10 +163,11 @@ Links Section
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 50px;
+    filter: grayscale(1);
 }
 
 .partnerSection {
-    background-color: var(--color-white-whip);
+    background-color: var(--color-white);
 }
 
 @media (max-width: 1000px) {

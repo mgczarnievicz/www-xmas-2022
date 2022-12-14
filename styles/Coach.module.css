@@ -12,6 +12,7 @@
     height: 250px;
     object-fit: cover;
     border-radius: 76% 24% 63% 37% / 35% 20% 80% 65%;
+    filter: grayscale(1);
 }
 
 .coachDescription {
