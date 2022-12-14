@@ -54,7 +54,9 @@ a {
 p {
     line-height: 1.4;
 }
-
+li {
+    list-style-type: none;
+}
 main {
     /* min-height: 100vh; */
 }
