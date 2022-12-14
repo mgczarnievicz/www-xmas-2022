@@ -1,7 +1,13 @@
 .materialSection {
     width: 100%;
-    min-height: 90vh;
-    background-color: var(--color-green);
+    min-height: 96vh;
+
+    background-image: url("/img/material/pattern_papanoel.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* background-color: var(--color-green); */
     /* background: linear-gradient(var(--color-white-whip), var(--color-green)); */
     display: flex;
     justify-content: center;
@@ -9,13 +15,12 @@
 }
 
 .subjectContainer {
-    
     width: 750px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 800px) {

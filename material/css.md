@@ -14,7 +14,7 @@ CSS means Cascading Stylesheets. While HTML defines the structure and semantics 
 -   Value: The value we assign to a property.
 -   Declaration: Each pair of property and value is a declaration.
 
-### Add Image
+![Css Syntax](../img/material/cssSyntax.png)
 
 Our selector can be:
 

@@ -24,7 +24,7 @@
 General Section
 ---------------------------------------- */
 .section {
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,10 +182,12 @@ Links Section
         grid-template-columns: repeat(1, 1fr);
     }
     .partnersContainer {
+
         grid-template-columns: repeat(1, 1fr);
     }
     img.sticky_image {
         width: 300px;
+
     }
 }
 
