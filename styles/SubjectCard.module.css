@@ -22,6 +22,7 @@
         ),
         url("/img/home/xmas.jpeg");
     background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .cardPage {
