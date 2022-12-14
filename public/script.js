@@ -1,6 +1,4 @@
-var $rotating = $(".Home_sticky_image__uCfa_"),
-    $body = $(document.body),
-    bodyHeight = $body.height();
+var $rotating = $(".Home_sticky_image__uCfa_");
 
 $(window).scroll(function () {
     $rotating.css({
