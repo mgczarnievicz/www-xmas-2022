@@ -9,7 +9,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 export default function material(props: MaterialProps) {
-    console.log(props);
+    // console.log(props);
 
     return (
         <>

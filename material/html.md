@@ -16,6 +16,8 @@ clarification:
 -   `Hypertext`: Refers to the ability of HTML to create links that link one webpage to another. (Either on a single website or in between different websites.) This is a fundamental aspect of the web and the idea behind the "world wide" interconnection.
 -   `Markup Language`: Refers to a syntax that uses specific element to structure or format a document.
 
+## Concepts
+
 -   `HTML element`: every piece of content in a HTML document is placed inside of an HTML element
 -   `HTML tags`: the elements are written in form of HTML tags, meaning surrounded by `<>` and
     `</>`
@@ -57,7 +59,7 @@ Content sectioning elements allow you to organize the document content into logi
 | section | Used for seperating different "sections" of a website. Note that you should not use a section tag if article, aside, or nav is more appropriate. |
 | `<div>` | Is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS|
 
-### Add image
+![Semantics](../img/material/semantics.png)
 
 # Attributes.
 

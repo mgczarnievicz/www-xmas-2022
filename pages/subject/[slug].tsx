@@ -9,7 +9,7 @@ import Logo from "../../components/Logo";
 import styles from "../../styles/SubjectCard.module.css";
 
 export default function SubjectPage(props: SubjectProps) {
-    console.log("Subject Page: ", props);
+    // console.log("Subject Page: ", props);
 
     return (
         <main>

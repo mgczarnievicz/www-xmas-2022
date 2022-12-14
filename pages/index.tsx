@@ -12,16 +12,19 @@ import Logo from "../components/Logo";
 import Partners from "../components/Partners";
 
 // REVIEW IMPORT FORM JSON COACH
+//The welcome link doesnt work
 const coachArray = [
     {
         name: "Gimena",
         img: "/img/coaches/gimena.jpg",
-        description: "FS Coach from Spiced Berlin",
+        description:
+            "is a Web Development Coach from Spiced Berlin.  Originally from Uruguay she moved to Berlin 1.5 years ago. She is a graduate from the web developer bootcamp at Spiced and also studied electronic engineering in her home country. ",
     },
     {
         name: "Jan",
         img: "/img/coaches/jan.png",
-        description: "FS Coach from Spiced Berlin",
+        description:
+            "is a Web Development Coach from Spiced Berlin. He worked as a Software Engineer for 10 years after playing Poker professionally. He is german and loves dogs and coding.",
     },
 ];
 
@@ -30,7 +33,7 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-    console.log("Props: ", props);
+    // console.log("Props: ", props);
 
     return (
         <>
@@ -59,7 +62,7 @@ export default function Home(props: HomeProps) {
                         {/* className={styles.navOption} */}
                         <Link
                             href={"#welcome-section"}
-                            scroll={false}
+                            scroll={true}
                             className="navOption"
                         >
                             Welcome
@@ -180,13 +183,13 @@ export async function getStaticProps() {
     // Get files from the material dir
     let files = fs.readdirSync(path.join("public", "img", "home", "partners"));
 
-    console.log("fils: ", files);
+    // console.log("fils: ", files);
 
     files = files.filter((file) => {
         return file.toLocaleLowerCase().includes("logo");
     });
 
-    console.log("fils after: ", files);
+    // console.log("fils after: ", files);
 
     return { props: { files } };
 }
