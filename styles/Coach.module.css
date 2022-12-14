@@ -18,6 +18,7 @@
 
 .coachDescription {
     text-shadow: 0px 0px 15px var(--color-red);
+    width: 300px;
     /* font-size: 1.3rem; */
 }
 @media (max-width: 800px) {
