@@ -79,7 +79,7 @@ export default function Home(props: HomeProps) {
                             scroll={false}
                             className="navOption"
                         >
-                            Material
+                            Useful Links
                         </Link>
                         <Link
                             href={"#partners-section"}
