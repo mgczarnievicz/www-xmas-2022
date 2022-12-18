@@ -35,4 +35,6 @@ The application has a top navigation that allows the user to navigate to:
 
 This page was made by Gimena, designed by Klaus and spelling review by Jan.
 
+For the load of md files, it was following the tutorial of Brad Traversy.
+
 ## Preview

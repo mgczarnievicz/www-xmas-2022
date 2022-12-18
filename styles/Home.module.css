@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
-    /* background: linear-gradient(var(--color-white-whip), 30%, var(--color-red)); */
 }
 
 /* ------------------------------------- 
@@ -194,19 +193,16 @@ Links Section
         width: 80%;
     }
     .partnersContainer {
-
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
     }
 
     .partnersContainer img {
         width: 100px;
-
     }
 
     img.sticky_image {
         width: 300px;
-
     }
     .coachesProfile {
         align-items: center;

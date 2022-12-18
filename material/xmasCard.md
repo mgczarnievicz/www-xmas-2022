@@ -2,7 +2,7 @@
 title: "X-mas Card"
 date: "December 2022"
 excerpt: "Steps to build your own Xmas card"
-cover_images: "/img/material/js.png"
+cover_images: "/img/material/card.png"
 ---
 
 # Steps to create you own X-mas Card

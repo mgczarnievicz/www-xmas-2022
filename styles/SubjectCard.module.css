@@ -1,4 +1,3 @@
-
 .cardSection {
     /* background-image: url("/img/home/xmas.jpeg") no-repeat 1 100%; */
     background-repeat: no-repeat;
@@ -92,9 +91,10 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     font-family: inherit;
     margin-top: 10px;
+    background-color: rgb(220, 220, 220, 0.3);
 }
 .btn:focus {
     outline: none;
