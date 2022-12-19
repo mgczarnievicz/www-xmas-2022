@@ -38,3 +38,11 @@ This page was made by Gimena, designed by Klaus and spelling review by Jan.
 For the load of md files, it was following the tutorial of Brad Traversy.
 
 ## Preview
+
+### Main Page
+
+![Main Page](public/readme/main_page.gif)
+
+### Useful Links & Theoretical Material
+
+![Useful Links](public/readme/useful_links.gif)
