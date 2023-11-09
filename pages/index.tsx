@@ -11,21 +11,20 @@ import { CoachProfile } from "../types/coach";
 import Logo from "../components/Logo";
 import Partners from "../components/Partners";
 
-// REVIEW IMPORT FORM JSON COACH
-//The welcome link doesnt work
+// REVIEW IMPORT FROM JSON COACH
 const coachArray = [
     {
-        name: "Gimena",
-        img: "/img/coaches/gimena.jpg",
+        name: "Laya",
+        img: "/img/coaches/laya.jpg",
         description:
-            "is a Web Development Coach from Spiced Berlin.  Originally from Uruguay she moved to Berlin 1.5 years ago. She is a graduate from the web developer bootcamp at Spiced and also studied electronic engineering in her home country. ",
+            "Originally from Iran, Laya is a Web Development Coach at SPICED Academy. After working as a language teacher for years, she moved to Berlin 1.5 years ago and enrolled at SPICED Academy's Full Stack Web Development bootcamp to discover new life/career paths. She loves cooking, cycling, and learning languages."
     },
-    {
-        name: "Jan",
-        img: "/img/coaches/jan.png",
-        description:
-            "is a Web Development Coach from Spiced Berlin. He worked as a Software Engineer for 10 years after playing Poker professionally. He is german and loves dogs and coding.",
-    },
+    // {
+    //     name: "Jan",
+    //     img: "/img/coaches/jan.png",
+    //     description:
+    //         "is a Web Development Coach from Spiced Berlin. He worked as a Software Engineer for 10 years after playing Poker professionally. He is german and loves dogs and coding.",
+    // },
 ];
 
 interface HomeProps {
@@ -110,8 +109,8 @@ export default function Home(props: HomeProps) {
                     id="coaches-section"
                     className={`${styles.section} ${styles.coachesSection}`}
                 >
-                    {/* Here will be the introduction of the trainees. */}
-                    <h1 className={styles.titleSection}>Your Xmas Coaches</h1>
+                    {/* Here will be the introduction of the instructor. */}
+                    <h1 className={styles.titleSection}>Your Coach</h1>
                     <div className={styles.coachesProfile}>
                         {coachArray &&
                             coachArray.map((each: CoachProfile, key) => {
@@ -129,7 +128,7 @@ export default function Home(props: HomeProps) {
                     <div className={`${styles.grid} `}>
                         <Link href="/material" className={styles.card}>
                             <h2>Material &rarr;</h2>
-                            <p>Find the material form the event here.</p>
+                            <p>Find the workshop notes here.</p>
                         </Link>
 
                         <Link
@@ -137,9 +136,9 @@ export default function Home(props: HomeProps) {
                             target="_blank"
                             className={styles.card}
                         >
-                            <h2>Xmas Card &rarr;</h2>
+                            <h2>Christmas Card &rarr;</h2>
                             <p>
-                                Here you will find the initial code to do your
+                                Here you will find the initial code to make your
                                 own Card!
                             </p>
                         </Link>
@@ -148,8 +147,8 @@ export default function Home(props: HomeProps) {
                             target="_blank"
                             className={styles.card}
                         >
-                            <h2>Xmas Card Board &rarr;</h2>
-                            <p>Upload your card and see all the other cards</p>
+                            <h2>Christmas Card Board &rarr;</h2>
+                            <p>Upload your card and see all the other cards.</p>
                         </Link>
 
                         <Link
@@ -159,8 +158,8 @@ export default function Home(props: HomeProps) {
                         >
                             <h2>SPICED Academy &rarr;</h2>
                             <p>
-                                Take a look at our website and the courses that
-                                we offer
+                                Take a look at our website and the courses
+                                we offer.
                             </p>
                         </Link>
                     </div>

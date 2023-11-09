@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             <Component {...pageProps} />
 
-            <footer className="footer">By Gimena & Klaus</footer>
+            <footer className="footer">Made By ❤️ at SPICED Academy</footer>
         </>
     );
 }
