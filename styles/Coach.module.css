@@ -1,7 +1,8 @@
 .profileCard {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    align-items: center;
+    gap: 50px;
     color: var(--color-white-whip);
     min-width: 400px;
 }
@@ -9,8 +10,8 @@
 .profileImage {
     object-fit: "contain";
     /* border: 2px var(--color-white-whip) solid; */
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 76% 24% 63% 37% / 35% 20% 80% 65%;
     filter: grayscale(1);

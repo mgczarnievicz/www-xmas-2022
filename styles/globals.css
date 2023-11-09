@@ -36,35 +36,38 @@
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
+
 a {
     color: inherit;
     text-decoration: none;
+    color: var(--color-white-whip)
 }
 
 p {
     line-height: 1.4;
+    text-align: justify;
 }
 li {
     list-style-type: none;
 }
-main {
-    /* min-height: 100vh; */
-}
+/* main {
+    min-height: 100vh;
+} */
 
 /* ---------------------------------------
 Header
 --------------------------------------- */
 .header {
     width: 100%;
-    height: 45px;
+    height: 30px;
+    padding: 40px 40px 0 40px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    background-color: #ffffff;
-    position: fixed;
+    align-items: center;
+    background-color: var(--color-green);
     top: 0;
     z-index: 2;
-    box-shadow: 0 0 5px 5px;
+    box-shadow: 0 0 50px 80px var(--color-green);
     font-family: "Ovo", serif;
 }
 
@@ -92,12 +95,11 @@ Header
 
 .footer {
     display: flex;
-    flex: 1;
-    padding: 5px 0;
-    border-top: 1px solid #eaeaea;
     justify-content: center;
-    align-items: center;
-    font-family: "Ovo", serif;
+    background-color: var(--color-green);
+    color: var(--color-white-whip);
+    box-shadow: 0 0 50px 60px var(--color-green);
+    padding-bottom: 50px;
 }
 
 .footer a {
