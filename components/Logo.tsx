@@ -5,10 +5,10 @@ import styles from "../styles/Logo.module.css";
 export default function Logo() {
     return (
         <Image
-            src="/img/home/wxmasc_onwhite-logo.svg"
+            src="/img/home/hero-black-transparent.png"
             alt="Logo"
-            width={100}
-            height={50}
+            width={140}
+            height={40}
             objectFit="cover"
             className={styles.logo}
         />

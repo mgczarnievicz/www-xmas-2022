@@ -1,4 +1,10 @@
-.logo svg {
+.logo{
     fill: white;
     background-color: white;
+    height: 150px;
+    width: 200px;
+}
+
+.logo:hover{
+    box-shadow: 20px 20px 15px grey;;
 }

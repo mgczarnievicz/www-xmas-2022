@@ -164,7 +164,7 @@ Links Section
 .partnersContainer {
     display: flex;
     gap: 50px;
-    padding: 50px;
+    padding: 80px;
     filter: grayscale(1);
 }
 

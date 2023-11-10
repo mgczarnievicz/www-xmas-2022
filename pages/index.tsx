@@ -32,7 +32,7 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-    // console.log("Props: ", props);
+    console.log("Props: ", props);
 
     return (
         <>
@@ -53,12 +53,11 @@ export default function Home(props: HomeProps) {
             </Head>
 
             <main className={styles.main}>
-                {/* className={styles.header} */}
                 <header className="header">
+                    <Link href="/">
                     <Logo />
-                    {/* className={styles.nav} */}
+                    </Link>
                     <nav className="nav">
-                        {/* className={styles.navOption} */}
                         <Link
                             href={"#welcome-section"}
                             scroll={true}
@@ -90,12 +89,13 @@ export default function Home(props: HomeProps) {
                     </nav>
                 </header>
                 <section className={`${styles.animation}`} id="anim-section">
+                    {/* <p className={`${styles.sticky_image}`}>Charity & Code</p> */}
                     <Image
-                        src="/img/home/wxmasc_onwhite-logo.svg"
+                        src="/img/home/hero-black-transparent.png"
                         className={`${styles.sticky_image}`}
                         alt="Vercel Logo"
-                        width={500}
-                        height={500}
+                        width={600}
+                        height={140}
                         objectFit="cover"
                     />
                 </section>
