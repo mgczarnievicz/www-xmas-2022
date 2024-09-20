@@ -10,14 +10,15 @@ cover_images: "/img/material/card.png"
 To build your own card we are going to start with the template code. To access it go to home -> Material -> Xmas Card.
 This will open a new window / tab.
 
-# Code Structure.
+# Code Structure
 
 ```
 .
 ├── README.md
 ├── css // all our stylings go in this folder
 │   └── style.css // preferably this file
-├── images // the images we're going to pick from unless you want to upload your own. That image should also go here.
+├── images // the images we're going to pick from unless you want to upload your own.
+│          // That image should also go here.
 │   ├── bokeh-ornament.jpg
 │   ├── bokeh-tree.jpg
 │   ├── candy-cane.jpg
@@ -42,7 +43,7 @@ This will open a new window / tab.
 └── .there-be-dragons
 ```
 
-# Design our card.
+# Design our card
 
 We want our card to have:
 
@@ -53,9 +54,9 @@ We want our card to have:
 
 We have three classes predefined:
 
--   `.card`
--   `.front`
--   `.back`
+- `.card`
+- `.front`
+- `.back`
 
 So we will want our main tag to have the class `.card`. Then inside of it we will want 2 different sections, one with the class `.front` and the other `.back`.
 
@@ -78,9 +79,9 @@ Up until now your code should look like this:
 
 Nothing should change because we haven't imported the premade classes.
 
-# Adding some elements.
+# Adding some elements
 
-## Front section.
+## Front section
 
 In here we want to add a title. Lets do it as an `h1` tag.
 
@@ -92,7 +93,7 @@ Example:
 </section>
 ```
 
-## Back section.
+## Back section
 
 In here we want to write a message. This one we can for example divide in three parts.
 
@@ -115,7 +116,7 @@ Example:
 </section>
 ```
 
-## Styling our front and back elements.
+## Styling our front and back elements
 
 The simplest way to style different parts of the page is adding a class to each element or styling by section.
 
@@ -123,7 +124,7 @@ Example:
 
 ### By section / block
 
--   We are not adding any more classes to the elements, we are going to add a property to the element that contains what we want to style. Be aware that ALL elements in this block will change.
+- We are not adding any more classes to the elements, we are going to add a property to the element that contains what we want to style. Be aware that ALL elements in this block will change.
 
 ```css
 .card {
@@ -133,7 +134,7 @@ Example:
 
 ### Adding new classes to each element
 
--   In our HTML
+- In our HTML
 
 ```html
 <main class="card">
@@ -152,7 +153,7 @@ Example:
 </main>
 ```
 
--   In our Css
+- In our Css
 
 ```css
 .headline {
@@ -161,7 +162,7 @@ Example:
 }
 ```
 
-### Importing an css file.
+### Importing an css file
 
 To add the predefined classes we need to import the file where these classes are defined.
 This should be our first line in our CSS file.
@@ -178,7 +179,7 @@ Now we see the front of our card but when we click nothing happens.
 The functionality of the `click` needs to be added in a JavaScript file.
 Because this requires more knowledge we pre define that function. All we need to do is to import it and execute it.
 
-### Steps:
+### Steps
 
 1. Let's go to our `script.js` in js folder
 2. We must import the function so we can use it. From where? From the file `sketch.js`
@@ -196,7 +197,7 @@ createCardFlip();
 Now lets see our card. Let's click in it and see how it flips.
 Now we are able to see the back!
 
-## Adding a nice image.
+## Adding a nice image
 
 If we want to add an image in the front we need to use the tag `<img>`. This tag requires a `src`, this is the name of the file and where it is located.
 Another attribute that is required is the `alt` for accessibility!, this is the description of the image that is used for screen readers.
