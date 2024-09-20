@@ -12,6 +12,8 @@ This will open a new window / tab.
 
 # Code Structure
 
+Starting off with the blank project, let's take a short look at the structure and what we're about to build.
+
 ```js
 .
 ├── README.md
@@ -35,8 +37,8 @@ This will open a new window / tab.
 │   └── white-tree-decorations.jpg
 ├── index.html // our landing page
 ├── js // everything that gives our page interactivity
-│   └── script.js // this file will import some functions
-│   // ignore all of these
+│   └── script.js // this file will import some functions and
+│                 // ignore all of these
 ├── package-lock.json
 ├── package.json
 ├── sandbox.config.json
