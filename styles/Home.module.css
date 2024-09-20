@@ -40,9 +40,8 @@ General Section
     position: absolute;
 }
 
-
 img.sticky_image {
-    object-fit: cover;
+    object-fit: contain;
     z-index: 0;
 }
 
@@ -113,9 +112,11 @@ Links Section
     justify-content: flex-start;
     font-family: "Ovo", serif;
 }
+
 .linksSection .titleSection {
     color: var(--color-red);
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -174,6 +175,7 @@ Links Section
 .partnerSection .titleSection {
     color: var(--color-red);
 }
+
 .partnerSection {
     box-shadow: 0px 0px 80px 100px white;
     background-color: var(--color-white);
@@ -196,6 +198,7 @@ Links Section
         grid-template-columns: repeat(1, 1fr);
         width: 80%;
     }
+
     .partnersContainer {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
@@ -208,37 +211,47 @@ Links Section
     img.sticky_image {
         width: 300px;
     }
+
     .coachesProfile {
         align-items: center;
     }
+
     .coachesSection {
         padding: 0px;
     }
+
     .linksSection {
         padding: 0px;
     }
+
     .coachesSection {
         padding: 0px;
     }
+
     .partnerSection {
         padding: 0;
     }
+
     .coachesProfile {
         padding-bottom: 50%;
     }
+
     .card {
         width: 80%;
     }
 }
 
 @media (prefers-color-scheme: dark) {
+
     .card,
     .footer {
         border-color: #222;
     }
+
     .code {
         background: #111;
     }
+
     .logo img {
         filter: invert(1);
     }

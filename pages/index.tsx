@@ -96,7 +96,7 @@ export default function Home(props: HomeProps) {
                         className={`${styles.sticky_image}`}
                         alt='Vercel Logo'
                         width={500}
-                        height={500}
+                        height={250}
                     />
                 </section>
                 <section id='welcome-section'>

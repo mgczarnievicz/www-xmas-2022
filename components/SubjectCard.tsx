@@ -1,9 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { SubjectInfo } from "../types/material";
-import styles from "../styles/SubjectCard.module.css";
+import { SubjectInfo } from '../types/material';
+import styles from '../styles/SubjectCard.module.css';
 
 export default function SubjectCard(props: SubjectInfo) {
     return (
@@ -11,7 +11,7 @@ export default function SubjectCard(props: SubjectInfo) {
             <Image
                 src={props.frontMatter.cover_images}
                 alt={props.slug}
-                width={100}
+                width={150}
                 height={150}
                 className={styles.cardImg}
             ></Image>
