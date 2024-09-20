@@ -12,7 +12,7 @@ This will open a new window / tab.
 
 # Code Structure
 
-```
+```js
 .
 ├── README.md
 ├── css // all our stylings go in this folder
@@ -153,7 +153,7 @@ Example:
 </main>
 ```
 
-- In our Css
+- In our CSS
 
 ```css
 .headline {
@@ -162,7 +162,7 @@ Example:
 }
 ```
 
-### Importing an css file
+### Importing a CSS file
 
 To add the predefined classes we need to import the file where these classes are defined.
 This should be our first line in our CSS file.
