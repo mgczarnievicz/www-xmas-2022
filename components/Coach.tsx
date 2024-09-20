@@ -11,7 +11,6 @@ export default function Coach(props: CoachProfile) {
                 alt={props.name}
                 width={500}
                 height={500}
-                objectFit="cover"
                 className={styles.profileImage}
             />
 

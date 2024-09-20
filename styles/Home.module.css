@@ -40,9 +40,13 @@ General Section
     position: absolute;
 }
 
+
 img.sticky_image {
+    object-fit: cover;
     z-index: 0;
 }
+
+
 
 /* -------------------------------------
 Welcome Section

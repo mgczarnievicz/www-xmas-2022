@@ -1,6 +1,7 @@
 .logo {
     z-index: 1;
     padding: 5px;
+    object-fit: cover;
 }
 @media (max-width: 800px) {
     .logo {
