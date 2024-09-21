@@ -20,18 +20,18 @@ This page was created with the purpose of presenting the information required fo
 
 The application has a top navigation that allows the user to navigate to:
 
--   Welcome page
--   Event Coaches
--   Useful Links:
-    -   Theoretical Material
-    -   Card Code Initial Template
-    -   Card Board, where all card were uploaded.
+- Welcome page
+- Event Coaches
+- Useful Links:
+  - Theoretical Material
+  - Card Code Initial Template
+  - Card Board, where all card were uploaded.
 
 ## Technologies
 
 [![My Skills](https://skillicons.dev/icons?i=ts,nextjs,css)](https://skillicons.dev)
 
-## Made by.
+## Made by
 
 This page was made by Gimena, designed by Klaus and spelling review by Jan.
 
