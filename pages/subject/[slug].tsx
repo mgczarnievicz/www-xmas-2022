@@ -1,25 +1,25 @@
-import React from "react";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { marked } from "marked";
-import { SubjectProps } from "../../types/subject";
-import Link from "next/link";
-import Logo from "../../components/Logo";
-import styles from "../../styles/SubjectCard.module.css";
+import React from 'react';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { marked } from 'marked';
+import { SubjectProps } from '../../types/subject';
+import Link from 'next/link';
+import Logo from '../../components/Logo';
+import styles from '../../styles/SubjectCard.module.css';
 
 export default function SubjectPage(props: SubjectProps) {
     // console.log("Subject Page: ", props);
 
     return (
         <main>
-            <header className="header">
+            <header className='header'>
                 <Logo />
-                <nav className="nav">
-                    <Link href="/" scroll={false} className="navOption">
+                <nav className='nav'>
+                    <Link href='/' scroll={false} className='navOption'>
                         Home
                     </Link>
-                    <Link href="/material" scroll={false} className="navOption">
+                    <Link href='/material' scroll={false} className='navOption'>
                         Go Back
                     </Link>
                 </nav>
@@ -45,9 +45,9 @@ export default function SubjectPage(props: SubjectProps) {
 
 // This Run in the "server" side
 export async function getStaticPaths() {
-    const files = fs.readdirSync(path.join("material"));
+    const files = fs.readdirSync(path.join('material'));
     const paths = files.map((filename) => ({
-        params: { slug: filename.replace(".md", "") },
+        params: { slug: filename.replace('.md', '') },
     }));
 
     return {
@@ -62,8 +62,8 @@ export async function getStaticProps({
     params: { slug: string };
 }) {
     const markdownWithMeta = fs.readFileSync(
-        path.join("material", slug + ".md"),
-        "utf-8"
+        path.join('material', slug + '.md'),
+        'utf-8'
     );
     const { data: frontMatter, content } = matter(markdownWithMeta);
 
