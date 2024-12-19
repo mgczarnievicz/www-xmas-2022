@@ -7,51 +7,52 @@ import SubjectCard from '../components/SubjectCard';
 import Logo from '../components/Logo';
 import Link from 'next/link';
 import Head from 'next/head';
+import React from 'react';
 
 export default function material(props: MaterialProps) {
-    return (
-        <>
-            <Head>
-                <title>Xmas Coding Material</title>
-            </Head>
-            <main>
-                <header className='header'>
-                    <Logo />
-                    <nav className='nav'>
-                        <Link href='/' scroll={false} className='navOption'>
-                            Home
-                        </Link>
-                    </nav>
-                </header>
-                <section className={styles.materialSection}>
-                    <div className={styles.subjectContainer}>
-                        {props.subjects.map((subject, index) => {
-                            return <SubjectCard {...subject} key={index} />;
-                        })}
-                    </div>
-                </section>
-            </main>
-        </>
-    );
+	return (
+		<>
+			<Head>
+				<title>Xmas Coding Material</title>
+			</Head>
+			<main>
+				<header className='header'>
+					<Logo />
+					<nav className='nav'>
+						<Link href='/' scroll={false} className='navOption'>
+							Home
+						</Link>
+					</nav>
+				</header>
+				<section className={styles.materialSection}>
+					<div className={styles.subjectContainer}>
+						{props.subjects.map((subject, index) => {
+							return <SubjectCard {...subject} key={index} />;
+						})}
+					</div>
+				</section>
+			</main>
+		</>
+	);
 }
 
 export async function getStaticProps() {
-    // Get files from the material dir
-    const files = fs.readdirSync(path.join('material'));
+	// Get files from the material dir
+	const files = fs.readdirSync(path.join('material'));
 
-    const subjects = files.map((filename) => {
-        // Create slug
-        const slug = filename.replace('.md', '');
+	const subjects = files.map((filename) => {
+		// Create slug
+		const slug = filename.replace('.md', '');
 
-        //Get front matter
-        const markdownWithMeta = fs.readFileSync(
-            path.join('material', filename),
-            'utf-8'
-        );
+		//Get front matter
+		const markdownWithMeta = fs.readFileSync(
+			path.join('material', filename),
+			'utf-8'
+		);
 
-        const { data: frontMatter } = matter(markdownWithMeta);
-        return { slug, frontMatter };
-    });
+		const { data: frontMatter } = matter(markdownWithMeta);
+		return { slug, frontMatter };
+	});
 
-    return { props: { subjects } };
+	return { props: { subjects } };
 }

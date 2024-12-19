@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from 'react';
 import { CoachProfile } from "../types/coach";
 
 import styles from "../styles/Coach.module.css";
